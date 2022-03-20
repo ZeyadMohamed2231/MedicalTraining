@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.StartUp1"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+        android:layout_gravity="center"
+        android:textColor="#22C7B8"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/prototype_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+        <LinearLayout
+            android:gravity="center"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_doctor"
+                android:text="@string/doctor"
+                android:textColor="@color/light_green"
+                android:textSize="15sp"
+                android:paddingEnd="23dp"
+                android:paddingStart="18dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="15dp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="2dp"
+                app:cornerRadius="6dp"
+                app:backgroundTint="@color/white"
+                />
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/button_Receptionist"
+                android:text="@string/receptionist"
+                android:textColor="@color/light_green"
+                android:textSize="15sp"
+                android:paddingEnd="23dp"
+                android:paddingStart="18dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="15dp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="2dp"
+                app:cornerRadius="6dp"
+                app:backgroundTint="@color/white"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_Nurse"
+                android:text="@string/nurse"
+                android:textColor="@color/light_green"
+                android:textSize="15sp"
+                android:paddingEnd="23dp"
+                android:paddingStart="18dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="15dp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="2dp"
+                app:cornerRadius="6dp"
+                app:backgroundTint="@color/white"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_Analysis_Employee"
+                android:text="@string/analysis_employee"
+                android:textColor="@color/light_green"
+                android:textSize="15sp"
+                android:paddingEnd="10dp"
+                android:paddingStart="18dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="15dp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                app:strokeColor="@color/grey"
+                app:strokeWidth="2dp"
+                app:cornerRadius="6dp"
+                app:backgroundTint="@color/white"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_Manger"
+                android:text="@string/manger"
+                android:textColor="@color/light_green"
+                android:textSize="15sp"
+                android:paddingEnd="15dp"
+                android:paddingStart="18dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="15dp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="5dp"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="2dp"
+                app:cornerRadius="6dp"
+                app:backgroundTint="@color/white"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_HR"
+                android:text="@string/hr"
+                android:textColor="@color/light_green"
+                android:textSize="15sp"
+                android:paddingTop="14dp"
+                android:paddingBottom="15dp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="5dp"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="2dp"
+                app:cornerRadius="6dp"
+                app:backgroundTint="@color/white"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
