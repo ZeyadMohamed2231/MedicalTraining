@@ -74,16 +74,18 @@
                 >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_phone_number"
                 android:hint="@string/phone_number"
                 android:background="@drawable/button_style"
                 android:layout_marginEnd="23dp"
                 android:layout_marginStart="23dp"
                 android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
+                android:layout_height="55dp"
                 android:inputType="number"
                 android:textColorHint="@color/grey"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="10dp"
                 />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -98,16 +100,34 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etPassword"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="55dp"
                     android:background="@drawable/button_style"
                     android:layout_marginEnd="23dp"
                     android:layout_marginStart="23dp"
                     android:hint="@string/password"
                     android:inputType="textPassword"
                     android:textColorHint="@color/grey"
+                    android:drawableStart="@drawable/lock"
+                    android:drawablePadding="10dp"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_login"
+                app:cornerRadius="8dp"
+                android:padding="15dp"
+                android:text="@string/login"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textAllCaps="false"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginStart="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/light_green"
+                />
 
 
 

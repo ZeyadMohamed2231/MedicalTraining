@@ -5,12 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import com.example.medicaltraining.R
 
 
-
-class LoginFragment : Fragment() {
+class ReceptionistSpecialistFragment : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,24 +23,8 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_login, container, false)
-
-        val btLogin = view.findViewById<Button>(R.id.button_login)
-
-        btLogin.setOnClickListener{
-
-            showFragment(ReceptionistSpecialistFragment())
-        }
-
-        return view;
+        return inflater.inflate(R.layout.fragment_receptionist_specialist, container, false)
     }
 
-    private fun showFragment(fragment: Fragment) {
-        parentFragmentManager
-            .beginTransaction()
-            .replace(R.id.frame_layout, fragment)
-            .addToBackStack(null)
-            .commit()
-    }
 
 }

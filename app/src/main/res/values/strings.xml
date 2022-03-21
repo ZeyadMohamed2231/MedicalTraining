@@ -14,4 +14,5 @@
     <string name="to_continue_login_now">To Continue , Login Now</string>
     <string name="password">Password</string>
     <string name="phone_number">Phone Number</string>
+    <string name="login">Login</string>
 </resources>
