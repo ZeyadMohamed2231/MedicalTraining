@@ -20,24 +20,106 @@
         android:src="@drawable/topleft"/>
 
     <LinearLayout
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <ImageView
-        android:layout_marginBottom="400dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo1"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo1"/>
+
+            <TextView
+                android:textColor="#22C7B8"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/welcome_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                />
+            <TextView
+                android:textColor="@color/grey"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/to_continue_login_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="@string/phone_number"
+                android:background="@drawable/button_style"
+                android:layout_marginEnd="23dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:textColorHint="@color/grey"
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginStart="23dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/grey"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
 
 
 
+
+
+
+        </LinearLayout>
 
     </LinearLayout>
+
+
 
 
 
