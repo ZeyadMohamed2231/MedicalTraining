@@ -3,7 +3,252 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".receptionist.ReceptionistSpecialistFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcv_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:src="@drawable/user1"
+                />
+
+            <LinearLayout
+                android:paddingStart="10dp"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/user_name"
+                    android:paddingTop="10dp"
+                    android:text="Ebrahem Elzainy"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Specialist , Receptionist"
+                        android:textSize="12sp"
+                        android:textColor="@color/light_green"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/notification_button_image"
+                android:paddingStart="20dp"
+                android:src="@drawable/notification"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="163dp"
+                    android:layout_height="192dp"
+                    android:layout_margin="10dp"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/blue">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageButton
+                            android:id="@+id/calls_image_button"
+                            android:src="@drawable/calls"
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:text="@string/calls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="163dp"
+                    android:layout_height="192dp"
+                    android:layout_margin="10dp"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/purple">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageButton
+                            android:id="@+id/reports_image_button"
+                            android:src="@drawable/reports"
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:text="@string/reports"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="163dp"
+                    android:layout_height="192dp"
+                    android:layout_margin="10dp"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/lightgreen">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageButton
+                            android:id="@+id/tasks_image_button"
+                            android:src="@drawable/tasks"
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:text="@string/tasks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+
+            <FrameLayout
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="163dp"
+                    android:layout_height="192dp"
+                    android:layout_margin="10dp"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/light_blue">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageButton
+                            android:id="@+id/attendance_image_button"
+                            android:src="@drawable/attendance"
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:text="@string/attendance_leaving"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
